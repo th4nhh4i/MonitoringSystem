@@ -1,7 +1,3 @@
-Hiểu ý bạn rồi, nếu đây là một Repo chứa các tài liệu hướng dẫn triển khai (Deployment Docs) riêng biệt cho từng công cụ, chúng ta nên viết README.md theo hướng danh mục tài liệu (Documentation Index).
-
-Cách viết này giúp người xem (hoặc giảng viên/nhà tuyển dụng) thấy ngay lộ trình bạn đã thực hiện và dễ dàng truy cập vào đúng file họ cần.
-
 Hệ Thống Giám Sát (Monitoring System) - Tài Liệu Triển Khai
 Kho lưu trữ này chứa các hướng dẫn chi tiết về việc cài đặt, cấu hình và triển khai các giải pháp giám sát hệ thống trên nền tảng CentOS 10. Các tài liệu được chia theo từng công nghệ cụ thể để thuận tiện cho việc tra cứu và thực hiện.
 
