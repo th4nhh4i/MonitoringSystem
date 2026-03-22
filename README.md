@@ -1,8 +1,36 @@
-Grafana
-- Grafana là một vizualizer hiển thị các metric dưới dạng các biểu đồ (chart) hoặc đồ thị (graph), được tập hợp lại thành dashboard có tính tùy biến cao, giúp dễ dàng theo dõi tình trạng của node. Đơn giản cho các bạn dễ hiểu là sau khi lấy được metric từ các thiết bị,grafana sẽ sử dụng metric đó để phân tích và tạo ra dashboard mô tả trực quan các metric cần thiết cho việc monitoring như CPU, RAM, disks, IO operations...
+Hiểu ý bạn rồi, nếu đây là một Repo chứa các tài liệu hướng dẫn triển khai (Deployment Docs) riêng biệt cho từng công cụ, chúng ta nên viết README.md theo hướng danh mục tài liệu (Documentation Index).
 
-Prometheus
-- Prometheus được dùng để giám sát hệ thống thông qua các daemon cài sẵn trên các node, qua đó thu thập các thông tin cần thiết. Prometheus giao tiếp với node qua giao thức http/https và lưu trữ data theo dạng time-series database (TSDB).
-- Prometheus sẽ thực hiện quá trình kéo (pull) các thông số/số liệu (metric) từ các job (exporter).
-- Prometheus sẽ lưu trữ các dữ liệu thu thập được ở local máy chủ.
-- Prometheus sẽ chạy các rule để xử lý các dữ liệu theo nhu cầu cũng như kiểm tra thực hiện các cảnh báo mà bạn mong muốn.
+Cách viết này giúp người xem (hoặc giảng viên/nhà tuyển dụng) thấy ngay lộ trình bạn đã thực hiện và dễ dàng truy cập vào đúng file họ cần.
+
+Hệ Thống Giám Sát (Monitoring System) - Tài Liệu Triển Khai
+Kho lưu trữ này chứa các hướng dẫn chi tiết về việc cài đặt, cấu hình và triển khai các giải pháp giám sát hệ thống trên nền tảng CentOS 10. Các tài liệu được chia theo từng công nghệ cụ thể để thuận tiện cho việc tra cứu và thực hiện.
+
+📁 Danh Mục Tài Liệu Triển Khai
+1. Nagios Core
+Tập trung vào giám sát trạng thái thiết bị, dịch vụ và cảnh báo sự cố.
+
+Nagios Centos 10 - Thanh Hải: Hướng dẫn từng bước cài đặt Nagios Core từ Source code trên CentOS 10.
+
+NagiosCore-Docs: Tài liệu chi tiết về cấu hình các Plugin, giám sát Host và Service.
+
+2. Prometheus & Grafana
+Giải pháp thu thập dữ liệu dạng Time-series và trực quan hóa hiện đại.
+
+Prometheus và Grafana trên CentOS: Quy trình triển khai Prometheus Server, cấu hình Node Exporter để lấy dữ liệu máy chủ và kết nối với Grafana Dashboard.
+
+3. TIG Stack (Telegraf - InfluxDB - Grafana)
+Bộ công cụ tối ưu cho việc thu thập và lưu trữ log/metrics hiệu suất cao.
+
+TIG Centos 10: Hướng dẫn cài đặt Telegraf (Agent), InfluxDB (Database) và thiết lập biểu đồ trên Grafana.
+
+🛠 Môi Trường Thực Hiện
+Hệ điều hành: Linux
+
+Công cụ hỗ trợ: Terminal, SSH, Web Browser (để truy cập Dashboard).
+
+Mục tiêu: Xây dựng hệ thống giám sát toàn diện cho hạ tầng mạng và máy chủ.
+
+📝 Lưu Ý
+Các tệp tin hướng dẫn được soạn thảo dưới dạng .docx.
+
+Để đạt hiệu quả tốt nhất, nên thực hiện theo thứ tự từ cài đặt hệ điều hành đến cấu hình từng dịch vụ tương ứng trong mỗi tài liệu.
